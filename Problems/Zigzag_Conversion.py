@@ -30,7 +30,6 @@ initial_index = 0
 empty_count = row_count - 2
 not_empty = row_count - 2
 
-#confused about how to write the above line to keep going until the below condition is met
 
 #NEXT TIME: ask Paige about whether lines 25-27 are necessary and how to rewrite them.
 
