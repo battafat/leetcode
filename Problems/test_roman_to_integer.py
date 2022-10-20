@@ -11,8 +11,8 @@ def test_double_numeral():
 def test_triple_numeral():
     assert romanToInt("III") == 3
 
-# def test_four():
-#     assert romanToInt("IV") == 4
+def test_four():
+    assert romanToInt("IV") == 4
 
 def test_five():
     assert romanToInt("V") == 5

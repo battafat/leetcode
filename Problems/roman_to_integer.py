@@ -22,8 +22,18 @@ def romanToInt(roman):
             "CM" : 900
                       }
     answer = 0
-    for char in roman:
-        new_string.append(dict[char])
-        answer = sum(new_string)
+    for ind, char in enumerate(roman):
+        prev_char = roman[ind - 1]
+        if char == "V":
+            if prev_char == "I":
+                new_string[ind - 1] = 4
+                answer = sum(new_string)
+            else:
+                new_string.append(dict[char])
+                answer = sum(new_string)
+
+        else:
+            new_string.append(dict[char])
+            answer = sum(new_string)
 
     return answer
