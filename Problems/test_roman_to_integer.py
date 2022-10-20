@@ -17,6 +17,9 @@ def test_triple_numeral():
 def test_five():
     assert romanToInt("V") == 5
 
+# def test_nine():
+#     assert romanToInt("IX") == 9
+
 def test_sixteen():
     assert romanToInt("XVI") == 16
 
