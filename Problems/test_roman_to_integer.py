@@ -17,5 +17,14 @@ def test_triple_numeral():
 def test_five():
     assert romanToInt("V") == 5
 
+def test_sixteen():
+    assert romanToInt("XVI") == 16
+
 def test_twenty():
     assert romanToInt("XX") == 20
+
+def test_fifty_eight():
+    assert romanToInt("LVIII") == 58
+
+def test_one_thousand_six_hundred():
+    assert romanToInt("MDC") == 1600
