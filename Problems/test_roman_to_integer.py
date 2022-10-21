@@ -17,8 +17,8 @@ def test_four():
 def test_five():
     assert romanToInt("V") == 5
 
-# def test_nine():
-#     assert romanToInt("IX") == 9
+def test_nine():
+    assert romanToInt("IX") == 9
 
 def test_sixteen():
     assert romanToInt("XVI") == 16
@@ -26,8 +26,23 @@ def test_sixteen():
 def test_twenty():
     assert romanToInt("XX") == 20
 
+def test_forty():
+    assert romanToInt("XL") == 40
+
 def test_fifty_eight():
     assert romanToInt("LVIII") == 58
 
+def test_ninety():
+    assert romanToInt("XC") == 90
+
+def test_four_hundred():
+    assert romanToInt("CD") == 400
+
+def test_nine_hundred():
+    assert romanToInt("CM") == 900
+
 def test_one_thousand_six_hundred():
     assert romanToInt("MDC") == 1600
+
+def test_one_thousand_nine_hundred_ninety_four():
+    assert romanToInt("MCMXCIV") == 1994
